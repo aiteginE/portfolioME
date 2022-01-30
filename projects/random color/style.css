@@ -1,0 +1,20 @@
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+button {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color:  red;
+    padding:  10px 50px;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 10px #001;
+    font-size: medium;
+    border:none
+}
