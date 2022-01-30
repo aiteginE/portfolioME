@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL POP-UP </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gradient();
+            background: url(/assets/IMG/greenWall.jpg);
+            background: radial-gradient(circle, rgb(12, 85, 182), rgb(124, 218, 211));
+        }
+        button {
+            color: #fff;
+            padding: 20px 60px;
+            background: rgb(118, 35, 134);
+            background: radial-gradient(circle, rgb(64, 241, 10), rgb(7, 0, 0));
+            cursor: pointer;
+        }
+        .modal {
+            visibility: hidden;
+            z-index: 1;
+            border: 2px solid rgb(52, 59, 219);
+            padding: 100px;
+            text-align: center;
+            position: absolute;
+            background-color: blanchedalmond;
+        }
+        .modal.active {
+            visibility: visible;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <button class="open-modal">CLICK ME!</button>
+
+    <div class="modal">
+        <h1>HERE IS YOUR MODAL BLOCK!</h1>
+        <button class="close-modal">CLOSE</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
