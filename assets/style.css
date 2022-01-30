@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  background: #eee;
+  margin: 0;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  min-height: 60px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+.header.show {
+  background-color: white;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: yellowgreen;
+}
+
+/* Nav */
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+  color: yellowgreen;
+  text-decoration: none;
+
+  transition: color 0.1s linear;
+}
+
+.nav__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+
+  background-color: black;
+  opacity: 0;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity 0.1s linear;
+}
+
+.nav__link:hover:after {
+  opacity: 1;
+}
+
+.nav__link:hover {
+  opacity: 1;
+  color: black;
+}
+
+/* Row */
+.section__row {
+  margin-top: 110px;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.res__img {
+  margin-left: 80px;
+  width: 50%;
+  max-height: 100%;
+}
+
+.res__img img {
+  object-fit: cover;
+}
+
+.res__name {
+  margin-top: 35px;
+  font-size: 40px;
+
+  margin-bottom: 15px;
+}
+
+.res__biog {
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  text-indent: 15px;
+  margin-bottom: 55px;
+  word-spacing: 2px;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.res-btn {
+  padding: 23px 30px;
+
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: background 0.1s linear, color 0.1s linear;
+  color: yellowgreen;
+  background-color: black;
+  text-decoration: none;
+}
+
+.res-btn:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+/* Interests */
+.interests {
+  margin-top: 110px;
+}
+
+.hobby {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hobbies__card {
+  border-radius: 6px;
+  width: 235px;
+  height: 65px;
+  background-color: #fff;
+  padding: 20px 20px;
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.hobbies__card::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 65px;
+  margin: -68px 38px;
+
+  background-color: #ccc;
+}
+
+i::before {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  z-index: 20;
+  transform: translateY(-50%);
+  transition: color 0.3s ease-out;
+}
+
+.hobbies__text {
+  padding-left: 30px;
+  text-align: center;
+}
+
+.interests .hobbies__card:hover {
+  box-shadow: 0 3px 16px 5px rgb(0 0 0 / 30%);
+  transform: scale(1.02);
+}
+
+.interests .hobbies__card:hover i {
+  color: greenyellow;
+}
+
+.btn {
+  margin: 0;
+  left: 0;
+  color: black;
+  background-color: yellowgreen;
+  border-color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.btn:hover {
+  background-color: black;
+  color: yellowgreen;
+  border-color: #fff;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s linear;
+}
+
+.card-title {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.content__title {
+  text-shadow: -4px 5px 4px #000;
+  color: yellowgreen;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  padding: 50px;
+  width: 525px;
+  height: 107px;
+  margin: 55px auto;
+  text-align: center;
+  position: relative;
+}
+
+.text-center h1:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 111px;
+  background: yellowgreen;
+  top: 135%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.text-center h1:before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: yellowgreen;
+  top: 129%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.content {
+  margin-top: 16%;
+  padding: 60px 0;
+}
+
+.content .card:hover {
+  box-shadow: 0 3px 16px 12px rgb(0 0 0 / 30%);
+  transform: scale(1.02);
+}
+
+main {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.info__text {
+  font-family: "Roboto Slab", sans-serif;
+  color: yellowgreen;
+}
+
+
+/* Contact Me */
+.contact__container{
+  row-gap: 48px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.contact__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact__subtitle {
+  font-size: 13px;
+  color: yellowgreen;
+}
+
+.contact__content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 16px 4px;
+}
+
+.contact__label {
+  font-size: 13px;
+  color: yellowgreen;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: #eee;
+  color: yellowgreen;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 4px 8px 8px 0;
+}
+
+.contact__inputs {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__form {
+  width: 460px;
+}
+
+.contact-btn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 23px 30px;
+
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: background 0.1s linear, color 0.1s linear;
+  color: yellowgreen;
+  background-color: #fff;
+  text-decoration: none;
+}
+.contact-btn:hover {
+  color: #000;
+}
+
+.section__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
