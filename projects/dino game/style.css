@@ -1,0 +1,44 @@
+h1 {
+    color: brown;
+}
+
+.game {
+    height: 300px;
+    width: 800px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+#dino {
+    width: 80px;
+    height: 83px;
+    background-image: url(dinopn.png);
+    background-size: 80px;
+    position: relative;
+    top: 217px;
+}
+ 
+#kaktus {
+    width: 66px;
+    height: 50px;
+    background-image: url(kaktus.png);
+    background-size: 100px;
+    position: relative; 
+    top: 165px;
+    left: 740px;
+    animation: cactusMove 1s infinite linear;
+}
+@keyframes cactusMove {
+    0% { left: 780px}
+    100% { left: -20px;}
+}
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {top: 200px}
+    30% {top: 150px}
+    50% {top: 100px}
+    80% {top: 150px}
+    100%{top: 200px}
+}
